@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Sobrang galing mo naman pala",
+      "completed": "true"
+    },
+    {
+      "title": "whyasdfsdferer",
+      "completed": "true",
+      "id": 2
+    },
+    {
+      "title": "hello world",
+      "completed": "false",
+      "id": 3
+    },
+    {
+      "title": "this is a what",
+      "completed": "false",
+      "id": 4
+    }
+  ]
+}
