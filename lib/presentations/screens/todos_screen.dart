@@ -75,16 +75,23 @@ class TodosScreen extends StatelessWidget {
 
   Widget _bottomAppBar() {
     return BottomAppBar(
+      // color: Colors.blue[400],
       shape: CircularNotchedRectangle(),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: Icon(
+              Icons.settings,
+              // color: Colors.white,
+            ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: Icon(
+              Icons.more_vert,
+              // color: Colors.white,
+            ),
             onPressed: () {},
           ),
         ],

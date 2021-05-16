@@ -3,12 +3,13 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class TodoService {
-  final baseApiUrl = 'http://localhost:3000';
+  final baseApiUrl = 'http://10.0.2.2:3000'; // android
+  // final baseApiUrl = 'http://localhost:3000'; // ios
 
   Future<List<dynamic>> fetchTodos() async {
     try {
       final response = await http.get(Uri.parse('$baseApiUrl/todos'));
-      print(response.body);
+      // print(response.body);
       return jsonDecode(response.body) as List;
     } catch (e) {
       print(e);
@@ -19,7 +20,7 @@ class TodoService {
   Future<bool> updateTodoCompletion(
       {Map<String, String> payload, int todoId}) async {
     print('data: ' + jsonEncode(payload));
-    print(payload);
+    // print(payload);
     try {
       await http.patch(
         Uri.parse('$baseApiUrl/todos/$todoId'),
